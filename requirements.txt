@@ -1,0 +1,14 @@
+streamlit
+numpy
+pandas
+nest-asyncio
+python-dotenv
+requests
+tiktoken
+langchain-core
+langchain-community
+faiss-cpu
+openai
+anthropic
+google-generativeai
+langchain-groq
