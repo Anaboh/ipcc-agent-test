@@ -15,3 +15,4 @@ langchain-groq
 langchain
 langchain-community
 sentence-transformers
+protobuf==3.20.*
