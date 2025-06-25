@@ -19,7 +19,8 @@ try:
     import faiss
     from langchain_core.documents import Document
     from langchain_core.retrievers import BaseRetriever
-    from langchain_huggingface import HuggingFaceEmbeddings
+    # Updated import path
+    from langchain_community.embeddings import HuggingFaceEmbeddings
     FAISS_AVAILABLE = True
 except ImportError as e:
     FAISS_AVAILABLE = False
@@ -220,7 +221,10 @@ class IPCCLLMAgent:
         }
         self.setup_api_clients()
         self.ipcc_knowledge = self.load_ipcc_knowledge()
-        self.faiss_retrievers = self.setup_faiss_retrievers()
+        
+        # Temporarily disable FAISS retrievers
+        self.faiss_retrievers = {}
+        # self.faiss_retrievers = self.setup_faiss_retrievers()
 
     def setup_api_clients(self):
         self.openai_client = None
