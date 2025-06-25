@@ -12,3 +12,6 @@ openai
 anthropic
 google-generativeai
 langchain-groq
+langchain
+langchain-community
+sentence-transformers
