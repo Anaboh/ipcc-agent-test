@@ -1,0 +1,15 @@
+flask
+flask-cors
+nest-asyncio
+pandas
+numpy
+requests
+python-dotenv
+langchain-core
+langchain-community
+faiss-cpu
+huggingface-hub
+langchain-openai
+langchain-anthropic
+langchain-google-genai
+langchain-groq
